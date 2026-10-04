@@ -1,0 +1,225 @@
+/**
+ * ODrive Connector — Admin Styles
+ */
+
+/* ── Page header ─────────────────────────────────────────────────────────── */
+.odrive-wrap {
+	max-width: 900px;
+}
+
+.odrive-page-title {
+	display: flex;
+	align-items: baseline;
+	gap: 10px;
+}
+
+.odrive-logo-text {
+	font-size: 1.6em;
+	font-weight: 700;
+	color: #1d2327;
+}
+
+.odrive-version {
+	font-size: .8em;
+	color: #646970;
+	font-weight: 400;
+}
+
+/* ── Tabs ────────────────────────────────────────────────────────────────── */
+.odrive-tabs {
+	margin-bottom: 0;
+}
+
+.odrive-tab-content {
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-top: none;
+	padding: 20px 24px 24px;
+}
+
+/* ── Sections ────────────────────────────────────────────────────────────── */
+.odrive-section {
+	margin-bottom: 28px;
+}
+
+.odrive-section-header {
+	display: flex;
+	align-items: baseline;
+	gap: 12px;
+}
+
+.odrive-section-header h2 {
+	margin: 0 0 4px;
+}
+
+.odrive-section-info {
+	background: #f6f7f7;
+	border: 1px solid #e1e1e1;
+	border-radius: 4px;
+	padding: 16px 20px;
+}
+
+/* ── Status banner ───────────────────────────────────────────────────────── */
+.odrive-status-banner {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 10px 14px;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	font-size: 1em;
+}
+
+.odrive-status-connected {
+	background: #edfaee;
+	border: 1px solid #a3d9a5;
+	color: #1a6b1d;
+}
+
+.odrive-status-disconnected {
+	background: #fdf1f1;
+	border: 1px solid #e5a0a0;
+	color: #8a1c1c;
+}
+
+.odrive-status-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+}
+
+.odrive-status-connected  .odrive-status-dot { background: #2ea043; }
+.odrive-status-disconnected .odrive-status-dot { background: #cf222e; }
+
+/* ── Info table ──────────────────────────────────────────────────────────── */
+.odrive-info-table th {
+	width: 180px;
+}
+
+/* ── Action row ──────────────────────────────────────────────────────────── */
+.odrive-action-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	margin-top: 16px;
+}
+
+.odrive-btn-dashboard .dashicons {
+	font-size: 14px;
+	vertical-align: middle;
+	margin-left: 4px;
+	line-height: 1.6;
+}
+
+/* ── AJAX result messages ────────────────────────────────────────────────── */
+.odrive-ajax-result {
+	margin-top: 12px;
+	padding: 0;
+}
+
+.odrive-ajax-result .odrive-msg {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	padding: 8px 12px;
+	border-radius: 4px;
+	font-size: .9em;
+}
+
+.odrive-ajax-result .odrive-msg-success {
+	background: #edfaee;
+	border: 1px solid #a3d9a5;
+	color: #1a6b1d;
+}
+
+.odrive-ajax-result .odrive-msg-error {
+	background: #fdf1f1;
+	border: 1px solid #e5a0a0;
+	color: #8a1c1c;
+}
+
+/* ── Backup table ────────────────────────────────────────────────────────── */
+.odrive-backup-table td,
+.odrive-backup-table th {
+	vertical-align: middle;
+	padding: 8px 12px;
+}
+
+.odrive-last-backup {
+	margin-bottom: 16px;
+	color: #646970;
+}
+
+.odrive-backup-status-success { color: #2ea043; font-weight: 600; }
+.odrive-backup-status-failed  { color: #cf222e; font-weight: 600; }
+
+/* ── Progress bar ────────────────────────────────────────────────────────── */
+.odrive-progress-wrap {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+	min-width: 160px;
+}
+
+.odrive-progress-bar {
+	height: 8px;
+	background: #e1e1e1;
+	border-radius: 4px;
+	overflow: hidden;
+}
+
+.odrive-progress-fill {
+	height: 100%;
+	background: #2271b1;
+	border-radius: 4px;
+	width: 0%;
+	transition: width 0.3s ease;
+}
+
+.odrive-progress-msg {
+	font-size: .8em;
+	color: #646970;
+}
+
+/* ── Activity log ────────────────────────────────────────────────────────── */
+.odrive-activity-table td,
+.odrive-activity-table th {
+	vertical-align: top;
+	font-size: .875em;
+}
+
+.odrive-activity-table code {
+	font-size: .875em;
+}
+
+/* ── Pagination ──────────────────────────────────────────────────────────── */
+.odrive-pagination {
+	margin-top: 12px;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.odrive-pagination .paging-input {
+	line-height: 30px;
+	margin: 0 8px;
+	color: #646970;
+}
+
+/* ── Health status ───────────────────────────────────────────────────────── */
+.odrive-health-ok          { color: #2ea043; font-weight: 600; }
+.odrive-health-unreachable { color: #cf222e; font-weight: 600; }
+.odrive-health-unknown     { color: #a4622a; font-weight: 600; }
+
+/* ── Responsive ──────────────────────────────────────────────────────────── */
+@media (max-width: 782px) {
+	.odrive-info-table th {
+		width: auto;
+	}
+	.odrive-action-row {
+		flex-direction: column;
+	}
+	.odrive-backup-table td:nth-child(3) {
+		display: none;
+	}
+}
